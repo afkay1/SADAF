@@ -46,7 +46,7 @@ export default function Reasons() {
               key={r.image}
               src={r.image}
               alt={r.title}
-              loading="lazy"
+             
               className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${n === i ? "reason-img-active opacity-100" : "opacity-0"}`}
             />
           ))}

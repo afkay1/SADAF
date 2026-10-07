@@ -43,7 +43,7 @@ export default function HScroll() {
         {PANELS.map((p) => (
           <figure key={p.title} className="shrink-0 md:w-[28vw]">
             <div className="aspect-[4/5] overflow-hidden">
-              <img src={p.img} alt={p.title} loading="lazy" className="hs-img h-full w-full scale-[1.25] object-cover" />
+              <img src={p.img} alt={p.title} className="hs-img h-full w-full scale-[1.25] object-cover" />
             </div>
             <figcaption className="mt-5">
               <p className="h-display text-3xl">{p.title}</p>

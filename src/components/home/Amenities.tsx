@@ -16,7 +16,7 @@ export default function Amenities() {
             src={a.image}
             alt=""
             aria-hidden
-            loading="lazy"
+           
             className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${n === i ? "opacity-45" : "opacity-0"}`}
           />
         ))}

@@ -28,7 +28,7 @@ export default function Types() {
         {APARTMENTS.map((a) => (
           <TLink key={a.slug} href={`/apartments/${a.slug}`} className="group w-[78vw] shrink-0 snap-start md:w-[26vw] md:min-w-[320px]">
             <div className="aspect-[4/5] overflow-hidden bg-aqua">
-              <img src={a.image} alt={a.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-110" />
+              <img src={a.image} alt={a.name} className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-110" />
             </div>
             <div className="mt-5 flex items-start justify-between gap-4">
               <div>

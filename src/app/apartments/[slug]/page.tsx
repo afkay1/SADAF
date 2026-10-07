@@ -72,7 +72,7 @@ export default function ApartmentPage({ params }: { params: { slug: string } }) 
       <section data-nav-theme="dark" className="px-page grid gap-6 pb-24 md:grid-cols-3 md:pb-36">
         {a.gallery.map((g) => (
           <div key={g} className="aspect-[4/3] overflow-hidden bg-aqua">
-            <img src={g} alt={`${a.name} interior`} loading="lazy" className="h-full w-full object-cover" />
+            <img src={g} alt={`${a.name} interior`} className="h-full w-full object-cover" />
           </div>
         ))}
       </section>

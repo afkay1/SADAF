@@ -24,7 +24,7 @@ export default function QuoteExpand() {
     <section ref={root} data-nav-theme="light" className="relative bg-cream">
       <div className="qe-stage relative flex h-screen items-center justify-center overflow-hidden">
         <div className="qe-frame relative overflow-hidden" style={{ width: "26vw", height: "34vh", minWidth: 200 }}>
-          <img src="/images/quote-pool.jpg" alt="Evening at the lagoon pool" loading="lazy" className="qe-img h-full w-full object-cover" />
+          <img src="/images/quote-pool.jpg" alt="Evening at the lagoon pool" className="qe-img h-full w-full object-cover" />
           <div className="qe-shade absolute inset-0 bg-black/40 opacity-0" />
           <blockquote className="qe-quote absolute inset-0 flex flex-col items-center justify-center px-page text-center text-white opacity-0">
             <p className="h-display max-w-4xl text-[clamp(2rem,5.5vw,5.5rem)]">

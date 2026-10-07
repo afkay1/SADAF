@@ -24,7 +24,7 @@ export default function Architecture() {
   return (
     <section ref={root} data-nav-theme="dark" className="relative bg-cream">
       <div className="ar-stage relative h-screen overflow-hidden">
-        <img src="/images/facade-low-angle.jpg" alt="SADAF façade in limestone" loading="lazy" className="ar-img absolute inset-0 h-full w-full object-cover" />
+        <img src="/images/facade-low-angle.jpg" alt="SADAF façade in limestone" className="ar-img absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 flex items-center justify-center bg-cream" style={{ mixBlendMode: "screen" }}>
           <span className="ar-word h-display select-none text-center font-medium text-black" style={{ fontSize: "clamp(3rem, 15.5vw, 17rem)", lineHeight: 1 }}>
             ARCHITECTURE
