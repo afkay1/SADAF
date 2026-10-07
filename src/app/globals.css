@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #f4efe6;
+  --ink: #10283a;
+  --aqua: #bcd9d8;
+  --lagoon: #0b3a42;
+  --coral: #e07a5f;
+  --pad: 48px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --pad: 20px;
+  }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+html {
+  background: var(--cream);
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--coral);
+  color: #fff;
+}
+
+.h-display {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.024em;
+}
+
+.h-script {
+  font-family: var(--font-script), cursive;
+  font-weight: 400;
+}
+
+.px-page {
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
+
+/* Fixed UI colour follows the section underneath */
+.chrome {
+  color: var(--ink);
+  transition: color 0.4s ease;
+}
+html[data-nav="light"] .chrome {
+  color: #fff;
+}
+html[data-nav="light"] .chrome .chrome-line {
+  background: #fff;
+}
+.chrome-line {
+  background: var(--ink);
+  transition: background 0.4s ease;
+}
+
+/* Word / line mask reveal */
+.mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+.mask > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* Intro state: hide page until the preloader lifts */
+html.intro body {
+  overflow: hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.fine-text {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin-slow,
+  .animate-pulse-ring {
+    animation: none;
+  }
+}
